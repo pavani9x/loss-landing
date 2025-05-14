@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -22,27 +20,27 @@ export default function Home() {
       </h2>
 
       <div className="flex flex-wrap justify-center gap-4 mb-8">
-        <Button asChild variant="default">
-          <a
-            href="https://bscscan.com/token/0xd91CEd2c995A7Ef45E06694c2380F91A93833a56"
-            target="_blank"
-          >
-            View on BscScan
-          </a>
-        </Button>
-        <Button asChild variant="outline">
-          <a href="https://t.me/losstokencommunity" target="_blank">
-            Join Telegram
-          </a>
-        </Button>
-        <Button asChild variant="secondary">
-          <a
-            href="https://pancakeswap.finance/swap?outputCurrency=0xd91CEd2c995A7Ef45E06694c2380F91A93833a56"
-            target="_blank"
-          >
-            Buy $LOSS
-          </a>
-        </Button>
+        <a
+          href="https://bscscan.com/token/0xd91CEd2c995A7Ef45E06694c2380F91A93833a56"
+          target="_blank"
+          className="bg-white text-black px-4 py-2 rounded font-semibold"
+        >
+          View on BscScan
+        </a>
+        <a
+          href="https://t.me/losstokencommunity"
+          target="_blank"
+          className="border border-white px-4 py-2 rounded font-semibold"
+        >
+          Join Telegram
+        </a>
+        <a
+          href="https://pancakeswap.finance/swap?outputCurrency=0xd91CEd2c995A7Ef45E06694c2380F91A93833a56"
+          target="_blank"
+          className="bg-gray-700 px-4 py-2 rounded font-semibold"
+        >
+          Buy $LOSS
+        </a>
       </div>
     </main>
   );
